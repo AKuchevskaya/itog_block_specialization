@@ -1,0 +1,11 @@
+Устанавливаем mysql из репозитория
+   1  cd /tmp
+   2  wget -c https://dev.mysql.com/get/mysql-apt-config_0.8.33-1_all.deb
+Проверяем
+   3  ls -fla | grep mysql
+Устанавливаем deb-пакет при помощи dpkg
+   4  sudo dpkg -i mysql-apt-config_0.8.33-1_all.deb
+   5  sudo apt-get update
+Удаляем пакет
+   6  sudo dpkg --remove mysql-apt-config
+   7  history
