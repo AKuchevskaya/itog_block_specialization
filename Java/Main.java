@@ -18,6 +18,8 @@ public class Main {
         Horse sandy = new Horse("Sandy", "2015-08-14", List.of("Trot", "Canter"));
         Camel kilu = new Camel("Kilu", "2014-05-05", List.of("Walk", "Carry Load"));
         Camel duna = new Camel("Duna", "2018-11-02", List.of("Walk", "Sit"));
+        Donkey balu = new Donkey("Balu", "2014-05-05", List.of("Walk", "Kick"));
+        Donkey burro = new Donkey("Burro", "2018-11-02", List.of("Walk", "Kick", "Bray"));
 
         registry.addAnimal(wiskes);
         registry.addAnimal(smude);
@@ -32,7 +34,8 @@ public class Main {
         registry.addAnimal(sandy);
         registry.addAnimal(kilu);
         registry.addAnimal(duna);
-
+        registry.addAnimal(balu);
+        registry.addAnimal(burro);
 
         Navigation navigation = new Navigation(registry);
         navigation.start();
