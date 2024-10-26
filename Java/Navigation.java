@@ -50,8 +50,7 @@ public class Navigation {
         System.out.println("1 - Список всех животных");
         System.out.println("2 - Завести новое животное");
         System.out.println("3 - Список команд животного");
-        System.out.println("4 - Добавить новую команды");
-        // System.out.println("5 - Присвоить класс животному");
+        System.out.println("4 - Добавить новую команду");
         System.out.println("5 - Сколько всего животных в списке");
         System.out.println("0 - Выход");
         System.out.print("Выберите действие: ");
@@ -100,7 +99,26 @@ public class Navigation {
                 Cat cat = new Cat(name, birthDate, commands);
                 registry.addAnimal(cat);
                 break;
-
+            case 2:
+                Dog dog = new Dog(name, birthDate, commands);
+                registry.addAnimal(dog);
+                break;
+            case 3:
+                Hamster hamster = new Hamster(name, birthDate, commands);
+                registry.addAnimal(hamster);
+                break;
+            case 4:
+                Horse horse = new Horse(name, birthDate, commands);
+                registry.addAnimal(horse);
+                break;
+            case 5:
+                Camel camel = new Camel(name, birthDate, commands);
+                registry.addAnimal(camel);
+                break;
+            case 6:
+                Donkey donkey = new Donkey(name, birthDate, commands);
+                registry.addAnimal(donkey);
+                break;
             default:
                 System.out.println("Неверный выбор типа животного.");
                 break;

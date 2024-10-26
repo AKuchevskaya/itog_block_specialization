@@ -21,6 +21,21 @@ public class Controller {
             case 1:
                 newAnimal = new Cat(name, birthDate, commands);
                 break;
+            case 2:
+                newAnimal = new Dog(name, birthDate, commands);
+                break;
+            case 3:
+                newAnimal = new Hamster(name, birthDate, commands);
+                break;
+            case 4:
+                newAnimal = new Horse(name, birthDate, commands);
+                break;
+            case 5:
+                newAnimal = new Camel(name, birthDate, commands);
+                break;
+            case 6:
+                newAnimal = new Donkey(name, birthDate, commands);
+                break;
             default:
                 System.out.println("Неверный тип животного.");
         }
