@@ -16,6 +16,8 @@ public class Main {
         Hamster liver = new Hamster("Liver", "2023-06-30", List.of("Roll", "Jump"));
         Horse sahara = new Horse("Sahara", "2016-02-29", List.of("Walk", "Run", "Gallop"));
         Horse sandy = new Horse("Sandy", "2015-08-14", List.of("Trot", "Canter"));
+        Camel kilu = new Camel("Kilu", "2014-05-05", List.of("Walk", "Carry Load"));
+        Camel duna = new Camel("Duna", "2018-11-02", List.of("Walk", "Sit"));
 
         registry.addAnimal(wiskes);
         registry.addAnimal(smude);
@@ -28,6 +30,8 @@ public class Main {
         registry.addAnimal(liver);
         registry.addAnimal(sahara);
         registry.addAnimal(sandy);
+        registry.addAnimal(kilu);
+        registry.addAnimal(duna);
 
 
         Navigation navigation = new Navigation(registry);
